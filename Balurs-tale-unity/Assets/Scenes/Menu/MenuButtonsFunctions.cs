@@ -7,10 +7,10 @@ public class MenuButtonsFunctions : MonoBehaviour
     {
         //hide menu corrutine
 
-        //async load game intro
+        //async load gameintro
 
-        // for test simple load game scene
-        SceneManager.LoadScene("Game");
+        // for test simple load intro scene
+        SceneManager.LoadScene("GameIntro");
     }
 
     [SerializeField] GameObject settingsLayer;
