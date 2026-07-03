@@ -55,13 +55,92 @@ public class PlayerController : MonoBehaviour
     }
 
 
+
+    float cameraCurrentRotationX = 0f;
+    Vector2 lookVector2Input;
+    Vector2 smoothVelocity4Look;
+    Vector2 currentLookVector2;
     void Looking()
     {
-        
+        //getting input
+        lookVector2Input = lookAction.ReadValue<Vector2>();
+
+        //smoothing input vector if needed
+        if (enableMouseSmoothing)
+            currentLookVector2 =
+                Vector2.SmoothDamp(
+                    currentLookVector2, lookVector2Input, ref smoothVelocity4Look, lookSmoothing);
+        else
+            currentLookVector2 = lookVector2Input;
+
+        //player Y rotating
+        float deltaRotationPlayerY = currentLookVector2.x * lookSpeed;
+        transform.Rotate(deltaRotationPlayerY * Vector3.up);
+
+        //camera X rotating. get the delta
+        float deltaRotationCameraX = currentLookVector2.y * lookSpeed;
+        //camera vertical clamping
+        cameraCurrentRotationX -= deltaRotationCameraX;
+        cameraCurrentRotationX = Mathf.Clamp(cameraCurrentRotationX, -90f, 90f);
+        //apply rotation
+        cameraTransform.localRotation = Quaternion.Euler(cameraCurrentRotationX, 0f, 0f);
     }
+
+
+
+    float _yAxisVelocity;
+    Vector2 moveVector2Input;
+    Vector2 originMovement4Jump = Vector2.up;
+    Vector2 smoothVelocity4Movement;
+
+  
 
     void Moving()
     {
+        if (characterController.isGrounded)
+        {
+            _yAxisVelocity = -1f;
+            //moveVector2Input = moveAction.ReadValue<Vector2>();
+            moveVector2Input = Vector2.SmoothDamp(
+                moveVector2Input, moveAction.ReadValue<Vector2>(),
+                ref smoothVelocity4Movement, movementSmooth);
+            originMovement4Jump = moveVector2Input;
+
+
+            //landing sound
+            //if(inAirTime > inAirTimeThreshold) _sounds.SetLanded();
+        }
+        else
+        {
+            moveVector2Input = originMovement4Jump;
+            if (moveAction.IsInProgress())
+                moveVector2Input = Vector2.Lerp(
+                    originMovement4Jump, moveAction.ReadValue<Vector2>(), airControl);
+
+
+            //landing sound
+            //inAirTime += Time.deltaTime;
+        }
+
+        //horizontal moving calculated
+        Vector3 movementVector =
+            transform.forward * moveVector2Input.y * movementSpeed * Time.deltaTime +
+            transform.right * moveVector2Input.x * movementSpeed * Time.deltaTime;
+
         
+
+        if (isWanna2Jump && characterController.isGrounded)
+        {
+            _yAxisVelocity = Mathf.Sqrt(jumpHeight * -2f * gravityValue);
+            originMovement4Jump = moveVector2Input;
+            isWanna2Jump = false;
+
+        }
+
+        if (!characterController.isGrounded)
+            _yAxisVelocity += gravityValue * Time.deltaTime;
+        movementVector.y = _yAxisVelocity * Time.deltaTime;
+
+        characterController.Move(movementVector);
     }
 }
