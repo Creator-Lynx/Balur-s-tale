@@ -213,6 +213,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1093864656}
   - {fileID: 690650245}
   - {fileID: 1965817697}
   m_Father: {fileID: 0}
@@ -250,7 +251,7 @@ Light:
   serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.16
+  m_Intensity: 0.03
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -313,7 +314,7 @@ Transform:
   m_GameObject: {fileID: 161029364}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0020904988, y: 0.863933, z: -0.4061765, w: -0.29771814}
-  m_LocalPosition: {x: -0.26677, y: 0, z: -0.02131}
+  m_LocalPosition: {x: 7.75, y: 0, z: 4.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -878,7 +879,7 @@ Transform:
   m_GameObject: {fileID: 469567228}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 1.37, z: 3.16}
+  m_LocalPosition: {x: 0.04, y: 0.53, z: 3.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -896,7 +897,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2.7
-  m_Range: 6.57
+  m_Range: 3.6974406
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -2157,6 +2158,81 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &1093864655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093864656}
+  - component: {fileID: 1093864658}
+  - component: {fileID: 1093864657}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1093864656
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093864655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 63241864}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.1371111}
+  m_AnchoredPosition: {x: 0.51000977, y: 4.916626}
+  m_SizeDelta: {x: -1, y: -74.8032}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1093864657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093864655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.4745098}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1093864658
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093864655}
+  m_CullTransparentMesh: 1
 --- !u!1 &1173168042
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,9 +2306,9 @@ MonoBehaviour:
         z: 12.100747
       Rotation:
         value:
-          x: -0.0054343785
-          y: -0.0029443821
-          z: 0.0012611083
+          x: -0.0054343776
+          y: -0.002944384
+          z: 0.0012607628
           w: 0.9999801
     - Position:
         x: -0.92
@@ -2248,9 +2324,9 @@ MonoBehaviour:
         z: 4.5378623
       Rotation:
         value:
-          x: -0.0033781
+          x: -0.003378107
           y: 0.087013826
-          z: -0.00014549779
+          z: -0.00014557758
           w: 0.99620146
     - Position:
         x: 1.01
@@ -2284,9 +2360,9 @@ MonoBehaviour:
         z: 3.764428
       Rotation:
         value:
-          x: -0.0007101217
+          x: -0.0007101216
           y: 0.03020939
-          z: 0.0009306563
+          z: 0.00093065936
           w: 0.99954295
     - Position:
         x: 1.5
@@ -2302,9 +2378,9 @@ MonoBehaviour:
         z: 5.8122215
       Rotation:
         value:
-          x: -0.0068269516
-          y: 0.0046504666
-          z: -0.001542046
+          x: -0.006826954
+          y: 0.0046504643
+          z: -0.0015424277
           w: 0.9999647
     - Position:
         x: -2.1
