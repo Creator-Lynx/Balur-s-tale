@@ -233,8 +233,9 @@ GameObject:
   - component: {fileID: 690650245}
   - component: {fileID: 690650247}
   - component: {fileID: 690650246}
+  - component: {fileID: 690650249}
   m_Layer: 5
-  m_Name: testText
+  m_Name: SubtitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -256,8 +257,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01001, y: 0.00050354}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 0.01001, y: -461.08337}
+  m_SizeDelta: {x: 1920, y: 157.8322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690650246
 MonoBehaviour:
@@ -281,7 +282,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e9579e08b2d478b4ba89f8fd61e319f3, type: 3}
-    m_FontSize: 165
+    m_FontSize: 79
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -292,7 +293,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.68
-  m_Text: "\u0437\u0430\u0433\u043B\u0443\u0448\u043A\u0430 \u043A\u0430\u0442\u0441\u0446\u0435\u043D\u044B"
+  m_Text: 
 --- !u!222 &690650247
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -301,6 +302,232 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690650244}
   m_CullTransparentMesh: 1
+--- !u!114 &690650249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690650244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 0b4ce014811cb2e4ca8037a93c77ffbc, type: 2}
+    - {fileID: 11400000, guid: c3e5739e7c781314d87e6b7da72f682c, type: 2}
+    - {fileID: 11400000, guid: c6b8fd9a761ae1c4e9c2cc1fa473ee5c, type: 2}
+    - {fileID: 11400000, guid: b16e58d965cdb95478edeff7e6675efd, type: 2}
+    - {fileID: 11400000, guid: 9ba51ec1cfcbb6a46aa977e438ee2684, type: 2}
+    - {fileID: 11400000, guid: 067b120e52599624aacebbcee1ab7504, type: 2}
+    - {fileID: 11400000, guid: aef2846bfc4b8b4409da1c37f6c48065, type: 2}
+    - {fileID: 11400000, guid: 76c2fc30d946de549acda29db0c2155b, type: 2}
+    - {fileID: 11400000, guid: 8934ea4766e291c479b66958ce109ce9, type: 2}
+    - {fileID: 11400000, guid: e543c6b4fe888244aad4137081782201, type: 2}
+    - {fileID: 11400000, guid: 68ca1334be8bb0446ab2dd1e8a626bd3, type: 2}
+    - {fileID: 11400000, guid: 1619e8105a780284d94803a97cd1b689, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u0412 \u0434\u0440\u0435\u0432\u043D\u0438\u0445
+              \u0441\u043A\u0440\u0438\u0436\u0430\u043B\u044F\u0445 \u043B\u044E\u0434\u0441\u043A\u0438\u0435
+              \u043B\u0435\u0442\u043E\u043F\u0438\u0441\u0446\u044B \u043E\u0441\u0442\u0430\u0432\u0438\u043B\u0438
+              \u0440\u0430\u0441\u0441\u043A\u0430\u0437 \u043E \u0432\u0435\u043B\u0438\u043A\u043E\u0439
+              \u0432\u043E\u0439\u043D\u0435."
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u041E \u0447\u0443\u0434\u043E\u0432\u0438\u0449\u0435,
+              \u0447\u0442\u043E \u043F\u0440\u0438\u0448\u043B\u043E \u0438\u0437
+              \u043F\u0440\u0435\u0434\u0432\u0435\u0447\u043D\u043E\u0439 \u0442\u044C\u043C\u044B
+              \u0438 \u043E\u0442\u0440\u0430\u0432\u043B\u044F\u043B\u043E \u0437\u0435\u043C\u043B\u044E
+              \u043E\u0434\u043D\u0438\u043C \u0441\u0432\u043E\u0438\u043C \u043F\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u0435\u043C."
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u0418\u043C\u044F \u0435\u043C\u0443 \u0431\u044B\u043B\u043E
+              \u0417\u043C\u0435\u0439 \u0411\u0430\u0301\u043B\u043E\u0440."
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u0421\u0442\u0440\u0430\u0448\u043D\u043E\u0439 \u0446\u0435\u043D\u043E\u0439
+              \u0434\u0430\u043B\u0430\u0441\u044C \u043F\u043E\u0431\u0435\u0434\u0430,
+              \u043E\u043C\u044B\u0442\u0430\u044F \u043A\u0440\u043E\u0432\u044C\u044E
+              \u0446\u0435\u043B\u043E\u0433\u043E \u043F\u043E\u043A\u043E\u043B\u0435\u043D\u0438\u044F,"
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u041F\u0443\u0441\u0442\u044C \u0441\u0442\u0430\u043B\u044C
+              \u043C\u0435\u0447\u0435\u0439 \u043D\u0435 \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u0430
+              \u0443\u0431\u0438\u0442\u044C \u0442\u043E, \u0447\u0442\u043E \u043F\u043E\u0440\u043E\u0434\u0438\u043B
+              \u043F\u0435\u0440\u0432\u043E\u0431\u044B\u0442\u043D\u044B\u0439
+              \u0445\u0430\u043E\u0441, \u043D\u043E \u0432\u043E\u0438\u043D\u044B
+              \u0441\u043C\u043E\u0433\u043B\u0438 \u0437\u0430\u043A\u043E\u0432\u0430\u0442\u044C
+              \u0447\u0443\u0434\u043E\u0432\u0438\u0449\u0435."
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u041E\u0431\u0435\u0441\u043A\u0440\u043E\u0432\u043B\u0435\u043D\u043D\u043E\u0433\u043E
+              \u0437\u0432\u0435\u0440\u044F \u0437\u0430\u0442\u0430\u0449\u0438\u043B\u0438
+              \u0432 \u0441\u0430\u043C\u0443\u044E \u0433\u043B\u0443\u0431\u043E\u043A\u0443\u044E
+              \u043F\u0435\u0449\u0435\u0440\u0443 \u043F\u043E\u0434 \u0434\u0440\u0435\u0432\u043D\u0435\u0439\u0448\u0438\u043C
+              \u043A\u0443\u0440\u0433\u0430\u043D\u043E\u043C, \u043E\u0442\u043A\u0443\u0434\u0430
+              \u043D\u0435\u0442 \u043F\u0443\u0442\u0438 \u043D\u0430\u0437\u0430\u0434."
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u0418 \u0437\u0430\u043C\u0443\u0440\u043E\u0432\u0430\u043B\u0438
+              \u0435\u0433\u043E \u0442\u0430\u043C, \u043E\u043F\u0443\u0442\u0430\u0432
+              \u0432\u0435\u043A\u043E\u0432\u044B\u043C\u0438 \u0446\u0435\u043F\u044F\u043C\u0438."
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u041B\u0435\u0442\u043E\u043F\u0438\u0441\u0438 \u0433\u043B\u0430\u0441\u044F\u0442,
+              \u0447\u0442\u043E \u043C\u043E\u043D\u0441\u0442\u0440 \u0437\u0430\u043F\u0435\u0440\u0442
+              \u0442\u0430\u043C \u043D\u0430\u0432\u0441\u0435\u0433\u0434\u0430."
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u0418 \u044D\u0442\u043E \u043F\u0440\u0430\u0432\u0434\u0430."
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u0412 \u0442\u0435\u043C\u043D\u043E\u0442\u0435
+              \u0438 \u0445\u043E\u043B\u043E\u0434\u0435 \u044F \u043D\u0430\u043A\u043E\u043D\u0435\u0446
+              \u043E\u0431\u0440\u0435\u043B \u0442\u043E, \u0447\u0435\u0433\u043E
+              \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0437\u043D\u0430\u043B"
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u2014 \u043F\u043E\u043A\u043E\u0439"
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 690650246}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "\u043D\u043E \u0440\u043E\u0434 \u043B\u044E\u0434\u0441\u043A\u043E\u0439
+              \u0432\u044B\u0441\u0442\u043E\u044F\u043B."
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &911624394
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,6 +539,8 @@ GameObject:
   - component: {fileID: 911624397}
   - component: {fileID: 911624396}
   - component: {fileID: 911624395}
+  - component: {fileID: 911624398}
+  - component: {fileID: 911624399}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -360,7 +589,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -386,13 +615,142 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911624394}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.06399983, y: -0.15297367, z: 0.009924767, w: -0.9861058}
+  m_LocalPosition: {x: -343.33398, y: 635.6618, z: -1903.6743}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &911624398
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911624394}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -7871547651901886233, guid: a70753dd8502a674f96a2f9e7f231b27, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.776
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &911624399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911624394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineBrain
+  ShowDebugText: 0
+  ShowCameraFrustum: 1
+  IgnoreTimeScale: 0
+  WorldUpOverride: {fileID: 0}
+  ChannelMask: -1
+  UpdateMethod: 2
+  BlendUpdateMethod: 1
+  LensModeOverride:
+    Enabled: 0
+    DefaultMode: 2
+  DefaultBlend:
+    Style: 1
+    Time: 2
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  CustomBlends: {fileID: 0}
 --- !u!1 &1433491879
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,12 +858,15 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 4025671955407386577, guid: 0e378b1ec6e7e5d4ab403334cf32b87c, type: 2}
-    value: {fileID: 690650244}
   - key: {fileID: -7513630035981449664, guid: 0e378b1ec6e7e5d4ab403334cf32b87c, type: 2}
     value: {fileID: 1433491881}
+  - key: {fileID: 5956238867174680430, guid: 0e378b1ec6e7e5d4ab403334cf32b87c, type: 2}
+    value: {fileID: 911624398}
+  - key: {fileID: 5466575736471426187, guid: 0e378b1ec6e7e5d4ab403334cf32b87c, type: 2}
+    value: {fileID: 690650249}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - a6121e7922a69a44fab72c6b78e8115a: {fileID: 690650244}
 --- !u!4 &1947690479
 Transform:
   m_ObjectHideFlags: 0

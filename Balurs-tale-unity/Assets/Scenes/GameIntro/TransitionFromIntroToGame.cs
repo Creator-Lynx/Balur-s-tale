@@ -7,4 +7,10 @@ public class TransitionFromIntroToGame : MonoBehaviour
         //there is may be a corutine
         SceneManager.LoadScene("Game");
     }
+
+    void Awake() 
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 }
