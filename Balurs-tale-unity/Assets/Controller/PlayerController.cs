@@ -74,11 +74,11 @@ public class PlayerController : MonoBehaviour
             currentLookVector2 = lookVector2Input;
 
         //player Y rotating
-        float deltaRotationPlayerY = currentLookVector2.x * lookSpeed;
+        float deltaRotationPlayerY = currentLookVector2.x * lookSpeed * globalLookSpeedModifier;
         transform.Rotate(deltaRotationPlayerY * Vector3.up);
 
         //camera X rotating. get the delta
-        float deltaRotationCameraX = currentLookVector2.y * lookSpeed;
+        float deltaRotationCameraX = currentLookVector2.y * lookSpeed * globalLookSpeedModifier;
         //camera vertical clamping
         cameraCurrentRotationX -= deltaRotationCameraX;
         cameraCurrentRotationX = Mathf.Clamp(cameraCurrentRotationX, -90f, 90f);
