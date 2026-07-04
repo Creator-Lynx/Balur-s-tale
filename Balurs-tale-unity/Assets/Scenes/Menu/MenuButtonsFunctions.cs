@@ -13,6 +13,16 @@ public class MenuButtonsFunctions : MonoBehaviour
         SceneManager.LoadScene("GameIntro");
     }
 
+    public void ButtonReStart()
+    {
+        //hide menu corrutine
+
+        //async load gameintro
+
+        // for test simple load intro scene
+        SceneManager.LoadScene("SplashScreen");
+    }
+
     [SerializeField] GameObject settingsLayer;
     public void ButtonSettings()
     {
