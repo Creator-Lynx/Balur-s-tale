@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Canvas))]
 public class InGameMenu : MonoBehaviour
 {
+    [SerializeField] InputActionAsset InputActions;
     Canvas canvas;
     void Awake()
     {
@@ -21,6 +22,7 @@ public class InGameMenu : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 stateMenu = false;
+                InputActions.FindActionMap("Player").Enable();
             }
             else
             {
@@ -28,6 +30,7 @@ public class InGameMenu : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 Cursor.visible = true;
                 stateMenu = true;
+                InputActions.FindActionMap("Player").Disable();
             }
         }
     }
