@@ -1328,6 +1328,7 @@ GameObject:
   - component: {fileID: 1345767031}
   - component: {fileID: 1345767030}
   - component: {fileID: 1345767029}
+  - component: {fileID: 1345767032}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -6181,6 +6182,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1345767032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345767028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12f1039e389b03a44bfdde2774c62399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuParticleMoving
+  shift: {x: 1.5, y: 1}
+  smoothtime: 0.1
+  defaultColor: {r: 0.75, g: 0.44625, b: 0.1425, a: 1}
+  applyiedColor: {r: 0.042052314, g: 0.990566, b: 0.95417416, a: 1}
+  colorModifier: 9
+  blinkTime: 0.25
 --- !u!1 &1379770877
 GameObject:
   m_ObjectHideFlags: 0
@@ -6508,6 +6527,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1345767032}
+        m_TargetAssemblyTypeName: MenuParticleMoving, Assembly-CSharp
+        m_MethodName: ColorBlink
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1577847249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6632,6 +6663,18 @@ MonoBehaviour:
       - m_Target: {fileID: 610853955}
         m_TargetAssemblyTypeName: MenuButtonsFunctions, Assembly-CSharp
         m_MethodName: ButtonStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1345767032}
+        m_TargetAssemblyTypeName: MenuParticleMoving, Assembly-CSharp
+        m_MethodName: ColorBlink
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7021,6 +7064,18 @@ MonoBehaviour:
       - m_Target: {fileID: 610853955}
         m_TargetAssemblyTypeName: MenuButtonsFunctions, Assembly-CSharp
         m_MethodName: ButtonSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1345767032}
+        m_TargetAssemblyTypeName: MenuParticleMoving, Assembly-CSharp
+        m_MethodName: ColorBlink
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
