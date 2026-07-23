@@ -6,11 +6,14 @@ public class MenuButtonsFunctions : MonoBehaviour
     public void ButtonStart()
     {
         //hide menu corrutine
+        
 
         //async load gameintro
 
         // for test simple load intro scene
-        SceneManager.LoadScene("GameIntro");
+        SceneManager.LoadScene("Game");
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void ButtonReStart()
