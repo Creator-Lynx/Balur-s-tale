@@ -16,6 +16,7 @@ public class Settings : MonoBehaviour
     [SerializeField] AudioMixer mixer;
     public void SetGlobalVolume(float t)
     {
-        mixer.SetFloat("MasterVolume", (t-1) * 80f);
+        if(t <= 0) t = 0.0001f;
+        mixer.SetFloat("MasterVolume", Mathf.Log10(t) * 20);
     }
 }
